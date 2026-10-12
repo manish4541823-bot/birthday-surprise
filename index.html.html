@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff5f9e">
+<title>Happy Birthday, My Love ❤️</title>
+<style>
+:root{--pink:#ff5f9e;--deep:#d92d75;--cream:#fff7fb;--ink:#632342}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:linear-gradient(145deg,#fff1f7,#ffe0ed 55%,#fff8fb);overflow-x:hidden}
+main{width:min(920px,100%);margin:auto;padding:24px 16px 56px;position:relative;z-index:1}
+.hero{min-height:82vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:34px 18px}
+.pill{display:inline-block;border:1px solid #ff9ac2;border-radius:99px;padding:8px 15px;background:#ffffffa8;font-size:.9rem}
+h1{font-size:clamp(2.7rem,9vw,5.6rem);line-height:1.02;letter-spacing:-.05em;margin:20px 0 12px;color:var(--deep)}
+h1 span{display:block;color:#ff7bad}
+.subtitle{font-size:clamp(1rem,3vw,1.2rem);max-width:570px;line-height:1.7;margin:0 auto 22px}
+.cake{font-size:clamp(5rem,18vw,8rem);filter:drop-shadow(0 12px 12px #e76d9b35);animation:bob 2.6s ease-in-out infinite}
+button,.outline{font:inherit;font-weight:750;border:2px solid var(--deep);border-radius:999px;padding:13px 20px;background:#fff;color:var(--deep);cursor:pointer;transition:transform .18s,background .18s,box-shadow .18s;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+button:hover,.outline:hover{background:#fff0f6;box-shadow:0 8px 22px #d92d7525;transform:translateY(-2px)}
+button:active,.outline:active{transform:scale(.96)}
+.primary{background:var(--deep);color:white}
+.primary:hover{background:#b91e60;color:white}
+.card{background:#ffffffc9;border:1px solid #ffffff;border-radius:28px;padding:clamp(22px,5vw,38px);margin:20px 0;box-shadow:0 18px 55px #a12b5a12;backdrop-filter:blur(10px)}
+h2{font-size:clamp(1.6rem,5vw,2.3rem);margin:0 0 15px;color:var(--deep)}
+.message{font-size:1.05rem;line-height:1.9;white-space:pre-line}
+.signature{font-family:Georgia,serif;font-style:italic;font-size:1.35rem;margin-top:18px}
+.center{text-align:center}
+.hidden{display:none}
+#surprise{margin-top:20px;padding:20px;border-radius:20px;background:#fff0f6;line-height:1.8;animation:appear .5s ease}
+.heart-row{font-size:1.8rem;letter-spacing:9px;margin:12px 0}
+label{display:block;text-align:left;font-weight:700;margin:14px 0 7px}
+input{width:100%;padding:13px 14px;border:1.5px solid #f4a2c4;border-radius:13px;background:#fff;color:var(--ink);font:inherit;outline:none}
+input:focus{border-color:var(--deep);box-shadow:0 0 0 3px #ff5f9e22}
+.small{font-size:.9rem;line-height:1.65;color:#87516a}
+.qr-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}
+#qrcode{padding:12px;background:white;border-radius:16px;min-height:24px}
+#qrcode img,#qrcode canvas{max-width:100%;height:auto!important}
+.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:15px}
+footer{text-align:center;padding:24px 10px;color:#99506f}
+.float{position:fixed;bottom:-50px;pointer-events:none;z-index:0;animation:rise linear forwards;opacity:.6}
+@keyframes rise{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+@keyframes bob{50%{transform:translateY(-12px) rotate(2deg)}}
+@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="pill">A little surprise, made just for you 💌</div>
+    <div class="cake" aria-label="birthday cake">🎂</div>
+    <h1>Happy Birthday<span id="heroName">My Love ❤️</span></h1>
+    <p class="subtitle">Aaj ka din utna hi special hai jitni tum meri life mein ho. Tumhari smile hamesha aise hi chamakti rahe. 💗</p>
+    <button class="primary" onclick="openSurprise()">Open Your Surprise ✨</button>
+    <div id="surprise" class="hidden">
+      <div class="heart-row">💖 💗 💖</div>
+      <strong>To my favourite person:</strong><br>
+      Tum meri life ki sabse pyaari khushi ho. Tumhara har din smiles, love aur beautiful moments se bhara rahe. Happy Birthday, meri jaan! 🥹❤️
+      <div class="signature">Always cheering for you 💌</div>
+    </div>
+    <p class="small" style="margin-top:22px">Scroll down for your birthday letter ↓</p>
+  </section>
+
+  <section class="card">
+    <h2>For the girl who makes life brighter 💐</h2>
+    <div class="message" id="letter">Happy Birthday, meri pyaari ❤️🎂
+
+Tumhari smile mere din ko better bana deti hai, aur tumhari khushi mere liye bahut matter karti hai. Aaj tumhare birthday par meri wish hai ki tumhare saare beautiful dreams dheere-dheere poore hon, tumhe dher saara pyaar mile aur tum hamesha apni special wali smile ke saath khush raho.
+
+Thank you meri life ka itna pyaara hissa hone ke liye. Aaj ka din tumhare jaisa hi beautiful ho. Keep shining, birthday girl! ✨
+
+Happy Birthday once again! 🧸💗</div>
+    <div class="signature">With lots of love, ❤️</div>
+  </section>
+
+  <section class="card center">
+    <h2>Make this surprise yours 💌</h2>
+    <p class="small">Neeche naam aur apna message change karo. Changes isi page par dikhengi.</p>
+    <label for="nameInput">Uska naam / nickname</label>
+    <input id="nameInput" placeholder="e.g. Princess, Angel..." maxlength="45">
+    <label for="fromInput">Tumhara naam / nickname (optional)</label>
+    <input id="fromInput" placeholder="e.g. Yours, Rohit" maxlength="45">
+    <label for="messageInput">Personal birthday message (optional)</label>
+    <input id="messageInput" placeholder="Ek special line likho..." maxlength="180">
+    <div class="actions"><button class="primary" onclick="personalize()">Update My Page 💗</button></div>
+  </section>
+
+  <section class="card center">
+    <h2>Make a QR Code 📱</h2>
+    <p class="small">Pehle is HTML page ko online publish karo (jaise GitHub Pages ya Netlify). Phir us website ka public link yahan paste karo. QR scan karne par wahi link khulega.</p>
+    <label for="urlInput">Your published website URL</label>
+    <input id="urlInput" type="url" placeholder="https://your-birthday-page.example" inputmode="url">
+    <div class="actions"><button class="primary" onclick="makeQR()">Generate QR Code ✨</button></div>
+    <div id="qrStatus" class="small" role="status" style="margin-top:12px"></div>
+    <div class="qr-wrap" style="margin-top:16px"><div id="qrcode" aria-label="Generated QR code"></div></div>
+    <div class="actions">
+      <button id="downloadQR" class="hidden" onclick="downloadQRImage()">Download QR PNG</button>
+      <button id="copyURL" class="hidden" onclick="copyPageURL()">Copy website link</button>
+    </div>
+    <p class="small">Note: QR generator ko chalane ke liye internet chahiye. QR sirf public URL kholta hai; website ko online host karna zaroori hai.</p>
+  </section>
+  <footer>Made with extra love and a little sparkle ✨💗</footer>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+let currentURL = '';
+function openSurprise(){
+  const box=document.getElementById('surprise');
+  box.classList.toggle('hidden');
+  if(!box.classList.contains('hidden')) box.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function personalize(){
+  const name=document.getElementById('nameInput').value.trim();
+  const from=document.getElementById('fromInput').value.trim();
+  const msg=document.getElementById('messageInput').value.trim();
+  document.getElementById('heroName').textContent=name || 'My Love ❤️';
+  if(msg){
+    const letter=document.getElementById('letter');
+    letter.textContent += '\n\nA little message just for you:\n' + msg;
+  }
+  if(from) document.querySelector('.signature').textContent='With love, '+from+' ❤️';
+  document.querySelector('.hero').scrollIntoView({behavior:'smooth'});
+}
+function makeQR(){
+  const input=document.getElementById('urlInput').value.trim();
+  const status=document.getElementById('qrStatus');
+  const box=document.getElementById('qrcode');
+  box.innerHTML='';
+  document.getElementById('downloadQR').classList.add('hidden');
+  document.getElementById('copyURL').classList.add('hidden');
+  if(!input){status.textContent='Pehle published website ka link paste karo.';return;}
+  let url;
+  try{url=new URL(input);if(url.protocol!=='https:' && url.protocol!=='http:') throw new Error();}
+  catch(e){status.textContent='Valid link daalo, jaise https://example.com';return;}
+  if(!window.QRCode){status.textContent='QR library load nahi hui. Internet connection check karke page reload karo.';return;}
+  currentURL=url.href;
+  new QRCode(box,{text:currentURL,width:220,height:220,colorDark:'#632342',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.H});
+  status.textContent='QR ready! Apne phone se scan karke test karo.';
+  document.getElementById('downloadQR').classList.remove('hidden');
+  document.getElementById('copyURL').classList.remove('hidden');
+}
+function downloadQRImage(){
+  const box=document.getElementById('qrcode');
+  const canvas=box.querySelector('canvas');
+  const img=box.querySelector('img');
+  let data='';
+  if(canvas) data=canvas.toDataURL('image/png');
+  else if(img && img.src) data=img.src;
+  if(!data){document.getElementById('qrStatus').textContent='QR abhi ready nahi hai.';return;}
+  const a=document.createElement('a');a.href=data;a.download='birthday-surprise-qr.png';document.body.appendChild(a);a.click();a.remove();
+}
+async function copyPageURL(){
+  try{await navigator.clipboard.writeText(currentURL);document.getElementById('qrStatus').textContent='Website link copied!';}
+  catch(e){document.getElementById('qrStatus').textContent='Link: '+currentURL;}
+}
+function floatHeart(){
+  const el=document.createElement('div');el.className='float';
+  el.textContent=['💗','💕','💖','✨','🌸'][Math.floor(Math.random()*5)];
+  el.style.left=Math.random()*100+'vw';el.style.fontSize=(15+Math.random()*20)+'px';
+  el.style.animationDuration=(7+Math.random()*7)+'s';document.body.appendChild(el);
+  setTimeout(()=>el.remove(),15000);
+}
+setInterval(floatHeart,850);
+</script>
+</body>
+</html>
